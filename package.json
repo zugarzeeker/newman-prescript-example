@@ -5,10 +5,13 @@
   "author": "Supanut Apikulvanich <supanut.overload@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node testAll.js",
     "test": "prescript tests/example.js",
     "test:debug": "prescript -d tests/example.js"
   },
   "dependencies": {
+    "chalk": "^2.4.1",
+    "glob": "^7.1.3",
     "newman": "^4.1.0",
     "prescript": "^0.720.6"
   },
