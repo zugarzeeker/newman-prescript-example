@@ -10,7 +10,7 @@ fs.writeFileSync(
   `build/${filepath
     .split('/')
     .pop()
-    .replace(/\.js$/, '')}.json`,
+    .replace(/\.js(on)?$/, '')}.json`,
   JSON.stringify(collection, null, 2),
   'utf8'
 )

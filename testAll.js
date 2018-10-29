@@ -2,7 +2,7 @@ const glob = require('glob')
 const chalk = require('chalk')
 let failures = 0
 
-for (const file of glob.sync('tests/**/*.js')) {
+for (const file of glob.sync('tests/**/*.js*')) {
   try {
     const childProcess = require('child_process')
     childProcess.execFileSync('./node_modules/prescript/bin/prescript', ['./test.js', '--', `./${file}`])
