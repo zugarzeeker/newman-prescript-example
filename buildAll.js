@@ -5,9 +5,10 @@ let failures = 0
 for (const file of glob.sync('tests/**/*.js')) {
   try {
     const childProcess = require('child_process')
-    childProcess.execFileSync('./node_modules/prescript/bin/prescript', ['./test.js', '--', `./${file}`])
+    childProcess.execFileSync('node', ['build.js', `./${file}`])
     console.log(chalk.bgGreen.bold(' OK '), file)
   } catch (e) {
+    console.log(e)
     if (e.status === 2) {
       console.log(chalk.bgCyan.bold(' .. '), file)
     } else {

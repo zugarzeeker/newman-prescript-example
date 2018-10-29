@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Sample Postman Collection (POST)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "description": "A sample collection to demonstrate collections as a set of related requests"
+  },
+  "item": [
+    {
+      "name": "A simple POST request",
+      "request": {
+        "url": "https://postman-echo.com/post",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "Duis posuere augue vel cursus pharetra. In luctus a ex nec pretium..."
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-const { testCollection } = require('../lib/newman')
+const { mergeCollections } = require('../lib/newman')
 const collection = require('./sample-collection.json')
 
-testCollection(collection)
+module.exports = mergeCollections([collection], module)
