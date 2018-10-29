@@ -5,9 +5,8 @@
   "author": "Supanut Apikulvanich <supanut.overload@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node testAll.js",
-    "test": "prescript tests/example.js",
-    "test:debug": "prescript -d tests/example.js"
+    "test": "node testAll.js",
+    "build": "node buildAll.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
